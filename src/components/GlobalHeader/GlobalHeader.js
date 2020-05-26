@@ -1,7 +1,4 @@
-import React from "react";
-import Notification20 from "@carbon/icons-react/lib/notification/20";
-import UserAvatar20 from "@carbon/icons-react/lib/user--avatar/20";
-import AppSwitcher20 from "@carbon/icons-react/lib/app-switcher/20";
+import React, { useState } from "react";
 
 import {
   Header,
@@ -15,12 +12,16 @@ import {
   HeaderSideNavItems,
   SideNav,
   SideNavItems,
-  SkipToContent
+  SkipToContent,
+  Button
 } from "carbon-components-react/lib/components/UIShell";
 
 const GlobalHeader = () => {
-  const onClickSideNavExpand = () => {};
-  const isSideNavExpanded = false;
+  const [isSideNavExpanded, setIsNavExpanded] = useState(false);
+  const onClickSideNavExpand = () => {
+    setIsNavExpanded(!isSideNavExpanded);
+  };
+
   return (
     <Header aria-label="IBM Platform Name">
       <SkipToContent />
@@ -30,20 +31,22 @@ const GlobalHeader = () => {
         isActive={isSideNavExpanded}
       />
       <HeaderName href="#" prefix="IBM">
-        [Platform]
+        User Research
       </HeaderName>
       <HeaderNavigation aria-label="IBM [Platform]">
-        <HeaderMenuItem isCurrentPage="true" href="#">
-          Link 1
+        <HeaderMenuItem isCurrentPage={true} href="/">
+          About
         </HeaderMenuItem>
-        <HeaderMenuItem href="#">Link 2</HeaderMenuItem>
-        <HeaderMenuItem href="#">Link 3</HeaderMenuItem>
-        <HeaderMenu aria-label="Link 4" menuLinkName="Link 4">
-          <HeaderMenuItem href="#">Sub-link 1</HeaderMenuItem>
-          <HeaderMenuItem href="#">Sub-link 2</HeaderMenuItem>
-          <HeaderMenuItem href="#">Sub-link 3</HeaderMenuItem>
-        </HeaderMenu>
+        <HeaderMenuItem href="/faq">FAQ</HeaderMenuItem>
       </HeaderNavigation>
+      <HeaderGlobalBar>
+        <HeaderGlobalAction
+          aria-label="Sign up"
+          onClick={() => console.log("click")}
+        >
+          {/* <Button>Sign up</Button> */}
+        </HeaderGlobalAction>
+      </HeaderGlobalBar>
       <SideNav
         aria-label="Side navigation"
         expanded={isSideNavExpanded}
@@ -51,14 +54,8 @@ const GlobalHeader = () => {
       >
         <SideNavItems>
           <HeaderSideNavItems>
-            <HeaderMenuItem href="#">Link 1</HeaderMenuItem>
-            <HeaderMenuItem href="#">Link 2</HeaderMenuItem>
-            <HeaderMenuItem href="#">Link 3</HeaderMenuItem>
-            <HeaderMenu aria-label="Link 4" menuLinkName="Link 4">
-              <HeaderMenuItem href="#">Sub-link 1</HeaderMenuItem>
-              <HeaderMenuItem href="#">Sub-link 2</HeaderMenuItem>
-              <HeaderMenuItem href="#">Sub-link 3</HeaderMenuItem>
-            </HeaderMenu>
+            <HeaderMenuItem href="/">About</HeaderMenuItem>
+            <HeaderMenuItem href="#">FAQ</HeaderMenuItem>
           </HeaderSideNavItems>
         </SideNavItems>
       </SideNav>
