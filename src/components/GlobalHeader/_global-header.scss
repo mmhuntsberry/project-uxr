@@ -1,1 +1,12 @@
 @import "./overrides";
+
+.active::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  border-bottom: 3px solid #4589ff;
+}

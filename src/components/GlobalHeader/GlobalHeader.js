@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 import {
   Header,
@@ -6,11 +7,10 @@ import {
   HeaderNavigation,
   HeaderMenuItem,
   HeaderMenuButton,
-  HeaderMenu,
   HeaderGlobalBar,
   HeaderGlobalAction,
-  HeaderSideNavItems,
   SideNav,
+  SideNavLink,
   SideNavItems,
   SkipToContent,
   Button
@@ -18,50 +18,68 @@ import {
 
 const GlobalHeader = () => {
   const [isSideNavExpanded, setIsNavExpanded] = useState(false);
+
   const onClickSideNavExpand = () => {
     setIsNavExpanded(!isSideNavExpanded);
   };
 
+  // for active tabs
+  const location = useLocation();
+
+  const isCurrent = linkPath => {
+    return location.pathname === linkPath ? true : false;
+  };
+
+  useEffect(() => {}, [location]);
+
   return (
-    <Header aria-label="IBM Platform Name">
-      <SkipToContent />
-      <HeaderMenuButton
-        aria-label="Open menu"
-        onClick={onClickSideNavExpand}
-        isActive={isSideNavExpanded}
-      />
-      <HeaderName href="#" prefix="IBM">
-        User Research
-      </HeaderName>
-      <HeaderNavigation aria-label="IBM [Platform]">
-        <HeaderMenuItem class="linky" isCurrentPage={true} href="/">
-          About
-        </HeaderMenuItem>
-        <HeaderMenuItem class="linky" href="/faq">
-          FAQ
-        </HeaderMenuItem>
-      </HeaderNavigation>
-      <HeaderGlobalBar>
-        <HeaderGlobalAction
-          aria-label="Sign up"
-          onClick={() => console.log("click")}
+    <>
+      <Header aria-label="IBM Platform Name">
+        <SkipToContent />
+        <HeaderMenuButton
+          aria-label="Open menu"
+          onClick={onClickSideNavExpand}
+          isActive={isSideNavExpanded}
+        />
+        <HeaderName element={Link} to="/" prefix="IBM">
+          User Research
+        </HeaderName>
+        <HeaderNavigation aria-label="IBM User Research" isCurrentPage>
+          <HeaderMenuItem element={Link} to="/" isCurrentPage={isCurrent("/")}>
+            About
+          </HeaderMenuItem>
+          <HeaderMenuItem
+            element={Link}
+            to="/faq"
+            isCurrentPage={isCurrent("/faq")}
+          >
+            FAQ
+          </HeaderMenuItem>
+        </HeaderNavigation>
+
+        <HeaderGlobalBar>
+          <HeaderGlobalAction
+            aria-label="Search"
+            onClick={() => {}}
+          ></HeaderGlobalAction>
+        </HeaderGlobalBar>
+        <SideNav
+          isChildOfHeader
+          aria-label="Side navigation"
+          expanded={isSideNavExpanded}
+          isPersistent={false}
         >
-          {/* <Button>Sign up</Button> */}
-        </HeaderGlobalAction>
-      </HeaderGlobalBar>
-      <SideNav
-        aria-label="Side navigation"
-        expanded={isSideNavExpanded}
-        isPersistent={false}
-      >
-        <SideNavItems>
-          <HeaderSideNavItems>
-            <HeaderMenuItem href="/">About</HeaderMenuItem>
-            <HeaderMenuItem href="#">FAQ</HeaderMenuItem>
-          </HeaderSideNavItems>
-        </SideNavItems>
-      </SideNav>
-    </Header>
+          <SideNavItems>
+            <SideNavLink element={Link} to="/" isActive={isCurrent("/")}>
+              About
+            </SideNavLink>
+            <SideNavLink element={Link} to="/faq" isActive={isCurrent("/faq")}>
+              FAQ
+            </SideNavLink>
+          </SideNavItems>
+        </SideNav>
+      </Header>
+    </>
   );
 };
 
