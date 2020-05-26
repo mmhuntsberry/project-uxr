@@ -8,31 +8,10 @@
 @import "../../styles/vendors/normalize";
 @import "../../styles/base/base";
 
-.app-content {
-  height: 100%;
-  padding: $layout-05 $spacing-04 0;
-  background-color: #000;
-  text-align: center;
-}
+@import "../GlobalHeader/global-header";
 
-.app-text,
-.app-link,
-.app-link:visited {
-  color: #fff;
-}
-
-.app-text {
-  @include carbon--type-style("productive-heading-03");
-  margin-bottom: $spacing-04;
-}
-
-.app-link {
-  @include carbon--type-style("productive-heading-04");
-  text-align: center;
-}
-
-.carbon-icon {
-  max-width: 400px;
-  max-height: 400px;
-  margin-bottom: $spacing-07;
+.app {
+  // height: 100vw;
+  // padding: $layout-05 $spacing-04 0;
+  // background-color: #000;
 }

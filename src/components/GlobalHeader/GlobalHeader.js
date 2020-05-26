@@ -34,10 +34,12 @@ const GlobalHeader = () => {
         User Research
       </HeaderName>
       <HeaderNavigation aria-label="IBM [Platform]">
-        <HeaderMenuItem isCurrentPage={true} href="/">
+        <HeaderMenuItem class="linky" isCurrentPage={true} href="/">
           About
         </HeaderMenuItem>
-        <HeaderMenuItem href="/faq">FAQ</HeaderMenuItem>
+        <HeaderMenuItem class="linky" href="/faq">
+          FAQ
+        </HeaderMenuItem>
       </HeaderNavigation>
       <HeaderGlobalBar>
         <HeaderGlobalAction

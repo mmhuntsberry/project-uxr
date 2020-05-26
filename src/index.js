@@ -1,5 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter as Router } from "react-router-dom";
+
 import "./index.scss";
 
 import App from "./components/App";
@@ -11,7 +13,12 @@ import "core-js/modules/es6.string.includes";
 import "core-js/modules/es6.string.trim";
 import "core-js/modules/es7.object.values";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(
+  <Router>
+    <App />
+  </Router>,
+  document.getElementById("root")
+);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

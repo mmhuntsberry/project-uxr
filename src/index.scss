@@ -1,3 +1,8 @@
+@import "@carbon/themes/scss/themes";
+// Use the gray 10 theme
+$carbon--theme: $carbon--theme--g100;
+@include carbon--theme();
+
 // carbon ui shell
 $feature-flags: (
   ui-shell: true
@@ -5,3 +10,6 @@ $feature-flags: (
 
 // import carbon components styles
 @import "carbon-components/scss/globals/scss/styles";
+
+// $carbon--theme: $carbon--theme--g10;
+// @include carbon--theme();
