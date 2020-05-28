@@ -73,6 +73,7 @@
 }
 
 .learn-more {
+  padding-right: $layout-01;
   padding-left: $layout-01;
   @media (min-width: 768px) {
     padding-left: $layout-05 + $spacing-03;

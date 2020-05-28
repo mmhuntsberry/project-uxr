@@ -1,4 +1,6 @@
 import React from "react";
+import { frequentlyAskedQuestions } from "../../data/data";
+import { Link } from "carbon-components-react";
 
 const FAQ = () => {
   return (
@@ -13,6 +15,43 @@ const FAQ = () => {
             research programs.
           </p>
         </div>
+      </section>
+      <section className="section--faq">
+        {frequentlyAskedQuestions.map(q => (
+          <>
+            <h1 className="section__title section__title--faq">{q.title}</h1>
+            <p className="section__body section__body--faq">{q.body}</p>
+            {q.subItems &&
+              q.subItems.map(item => (
+                <>
+                  <h5 className="subitem__title">{item.title}</h5>
+                  <p className="subitem__body">{item.body}</p>
+                </>
+              ))}
+          </>
+        ))}
+
+        {/* These are the FAQs with links couldn't figure out how to include link when mapping from an object */}
+        <h1 className="section__title section__title--faq">
+          How do I sign up for the program?
+        </h1>
+        <p className="section__body section__body--faq">
+          Easy! Just fill out this <Link href="#">sign-up form.</Link>
+        </p>
+        <h1 className="section__title section__title--faq">
+          I’m an existing panel member. Can I update my information?
+        </h1>
+        <p className="section__body section__body--faq">
+          Yes! Just re-submit the <Link href="#">sign-up form </Link>and we'll
+          update your information.
+        </p>
+        <h1 className="section__title section__title--faq">
+          I’ve signed up, but I no longer want to participate. How do I opt out?
+        </h1>
+        <p className="section__body section__body--faq">
+          We'll be sorry to see you go! Just fill out this{" "}
+          <Link href="#">opt-out form.</Link>
+        </p>
       </section>
     </>
   );
