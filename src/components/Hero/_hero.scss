@@ -41,6 +41,13 @@
     margin-top: $layout-07 + $layout-05;
     margin-left: $layout-05 + $layout-01;
   }
+
+  &--faq {
+    @media (min-width: 768px) {
+      margin-top: $spacing-08 * 3;
+      max-width: 500px;
+    }
+  }
 }
 
 .hero__title {
@@ -50,12 +57,20 @@
   @media (min-width: 768px) {
     @include carbon--type-style("productive-heading-06");
   }
+
+  &--faq {
+    color: black;
+  }
 }
 
 .hero__subtitle {
   @include carbon--type-style("body-short-01");
   margin-top: $layout-01;
   color: $text-04;
+
+  &--faq {
+    color: black;
+  }
 }
 
 .button--hero {

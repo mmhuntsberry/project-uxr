@@ -1,0 +1,19 @@
+.hero--faq {
+  height: 427px;
+}
+
+.faq-hero__text-container {
+  position: absolute;
+  width: 215px;
+  margin-top: $layout-06 + $spacing-06;
+  margin-left: $layout-01;
+
+  @media (min-width: 400px) {
+    width: 350px;
+  }
+
+  @media (min-width: 768px) {
+    margin-top: $spacing-08 + $spacing-08;
+    margin-left: $layout-05 + $layout-01;
+  }
+}
