@@ -9,10 +9,12 @@
 @import "../../styles/base/base";
 
 @import "../GlobalHeader/global-header";
+@import "../GlobalFooter/global-footer";
+@import "../../pages/About/about";
 @import "../Hero/hero";
+@import "../Card/card";
 
 .app {
-  // height: 100vw;
-  // padding: $layout-05 $spacing-04 0;
-  // background-color: #000;
+  margin: 0;
+  padding: 0;
 }

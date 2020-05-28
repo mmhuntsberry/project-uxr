@@ -1,10 +1,3 @@
-@import "./overrides";
-
-.about-page {
-  margin: 0;
-  padding: 0;
-}
-
 .hero {
   // remove default margin
   // that comes from carbon grid
@@ -41,13 +34,22 @@
   margin-left: $layout-01;
 
   @media (min-width: 400px) {
-    width: 300px;
+    width: 350px;
+  }
+
+  @media (min-width: 768px) {
+    margin-top: $layout-07 + $layout-05;
+    margin-left: $layout-05 + $layout-01;
   }
 }
 
 .hero__title {
-  @include carbon--type-style("expressive-heading-05");
+  @include carbon--type-style("productive-heading-05");
   color: $text-04;
+
+  @media (min-width: 768px) {
+    @include carbon--type-style("productive-heading-06");
+  }
 }
 
 .hero__subtitle {
@@ -58,43 +60,4 @@
 
 .button--hero {
   margin-top: $layout-02;
-}
-
-.sign-up {
-  margin: 0;
-}
-
-.sign-up__section-title {
-  @include carbon--type-style("productive-heading-05");
-  margin-top: $spacing-08;
-}
-
-.sign-up__cards-container {
-  margin: 0;
-}
-
-.sign-up__card {
-  margin-top: $spacing-08;
-}
-
-.sign-up__card-image {
-  height: 64px;
-}
-
-.sign-up__card-title {
-  @include carbon--type-style("productive-heading-02");
-  margin-top: $spacing-05;
-}
-
-.sign-up__card-body {
-  @include carbon--type-style("body-short-01");
-
-  margin-top: $spacing-02;
-}
-
-.sign-up__card-note {
-  @include carbon--type-style("helper-text-01");
-
-  display: inline-block;
-  margin-top: $spacing-03;
 }

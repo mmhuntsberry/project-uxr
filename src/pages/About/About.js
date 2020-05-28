@@ -1,65 +1,54 @@
 import React from "react";
+import { Button, Link } from "carbon-components-react";
 import Hero from "../../components/Hero";
-import impact from "../../assets/svg/impact.svg";
-import coCreation from "../../assets/svg/co-creation.svg";
-import exclusiveContent from "../../assets/svg/exclusive-content.svg";
-import compensation from "../../assets/svg/compensation.svg";
-
-const signupSectionData = [
-  {
-    title: "Exclusive access",
-    body:
-      "Get a sneak peek at what we're working on in global enterprise software solutions.",
-    note: "",
-    image: exclusiveContent,
-    alt: "animated web pages"
-  },
-  {
-    title: "Co-creation",
-    body:
-      "Connect with our friendly researchers who want to hear about your experience.",
-    note: "",
-    image: coCreation,
-    alt: "animated text bubble"
-  },
-  {
-    title: "Impact",
-    body: "Directly impact the future of the product.",
-    note: "",
-    image: impact,
-    alt: "animated light bulb"
-  },
-  {
-    title: "Compensation",
-    body: "Receive compensation for your time in user research studies.*",
-    note: "* We are prohibited from compensating government owned entities.",
-    image: compensation,
-    alt: "animated star"
-  }
-];
+import Card from "../../components/Card";
+import { signupSteps } from "../../data/data";
 
 const About = () => {
   return (
-    <div className="bx--grid bx--grid--full-width about-page">
+    <div className="about-page">
       <Hero />
-      <section className="bx--row sign-up">
-        <h4 className="bx--col-lg-4 sign-up__section-title">Why sign up?</h4>
+
+      <section className="bx--row section sign-up">
+        <h2 className="bx--col-lg-4 section__title">Why sign up?</h2>
         <div className="bx--row sign-up__cards-container">
-          {signupSectionData.map(d => (
-            <div
-              className="sign-up__card bx--col-lg-3 bx--col-md-4 bx--col-sm-8"
-              key={d.title}
-            >
-              <img className="sign-up__card-image" src={d.image} alt={d.alt} />
-              <h4 className="sign-up__card-title">{d.title}</h4>
-              <p className="sign-up__card-body">{d.body}</p>
-              {d.note && (
-                <span className="sign-up__card-note">
-                  <em>{d.note}</em>
-                </span>
-              )}
-            </div>
-          ))}
+          <Card />
+        </div>
+      </section>
+
+      <section className="bx--row section section--gradient get-started">
+        <div className="bx--col-lg-4 bx--col-md-3 bx--col-sm-8 get-started__content">
+          <h2 className="section__title">Let's get started!</h2>
+          <p className="section__subtitle">
+            Sign up to be part of our user research studies.
+          </p>
+          <Button className="button sign-up__button">Sign up</Button>
+        </div>
+
+        <div className="bx--col-lg-13=2 bx--col-md-5 bx--col-sm-8">
+          <div className="get-started__steps-container">
+            <h2 className="section__title--how-it-works">
+              Here's how it works:
+            </h2>
+            {signupSteps.map(step => (
+              <>
+                <h3 className="step__title">{step.title}</h3>
+                <p className="step__body">{step.body}</p>
+              </>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="bx--row section learn-more">
+        <div className="bx--col-lg-16">
+          <h2 className="section__title">Learn more</h2>
+          <p className="section__subtitle">
+            Check out some answers to frequently asked questions about the
+            program.
+          </p>
+          <Link className="link link--read-more" href="/faq">
+            Read the FAQ &rarr;
+          </Link>
         </div>
       </section>
     </div>
