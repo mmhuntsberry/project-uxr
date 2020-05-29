@@ -59,16 +59,22 @@
   margin-top: $spacing-05;
 }
 
+.learn-more {
+  padding-right: $layout-01;
+  padding-left: $layout-01;
+
+  @media (min-width: 768px) {
+    padding-left: $layout-05 + $spacing-03;
+  }
+}
+
 .link--learn-more {
   display: inline-block;
   margin-top: $spacing-03;
   margin-bottom: $spacing-09;
-}
+  text-decoration: none;
 
-.learn-more {
-  padding-right: $layout-01;
-  padding-left: $layout-01;
-  @media (min-width: 768px) {
-    padding-left: $layout-05 + $spacing-03;
+  &:hover {
+    text-decoration: underline;
   }
 }

@@ -1,10 +1,11 @@
 import React from "react";
-import { Button, Link } from "carbon-components-react";
+import { Button } from "carbon-components-react";
+import { Link } from "react-router-dom";
 import Hero from "../../components/Hero";
 import Card from "../../components/Card";
 
 // about page data
-import { signupSteps } from "../data/about.js";
+import { signupSteps } from "./data/about.js";
 
 const About = () => {
   return (
@@ -47,7 +48,7 @@ const About = () => {
             Check out some answers to frequently asked questions about the
             program.
           </p>
-          <Link className="link link--learn-more" href="/faq">
+          <Link className="link link--learn-more" to="/faq">
             Read the FAQ &rarr;
           </Link>
         </div>
