@@ -34,7 +34,7 @@ const Hero = () => {
           what's not working. Join our user research studies and tell us what
           you think.
         </p>
-        <Button className="button--hero">Sign up</Button>
+        <Button className="button button--hero">Sign up</Button>
       </div>
     </section>
   );
