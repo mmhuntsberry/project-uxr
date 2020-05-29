@@ -5,33 +5,33 @@ import logo from "../../assets/svg/svg-footer-logo-ibm.svg";
 const GlobalFooter = () => {
   return (
     <footer className="bx--row section footer">
-      <div className="bx--row footer__list-container">
+      <div className="bx--row footer__list-container" role="group">
         <div className="bx--col-md-1 bx--offset-lg-1 bx--col-lg-1"></div>
         <ul className="bx--col-lg-2 bx--col-md-2 bx--col-sm-8 footer__list">
           <li className="footer__list-item">
-            <Link className="footer__link" href="#">
+            <Link className="footer__link" href="#" role="link">
               Privacy
             </Link>
           </li>
           <li className="footer__list-item">
-            <Link className="footer__link" href="#">
+            <Link className="footer__link" href="#" role="link">
               Terms of use
             </Link>
           </li>
           <li className="footer__list-item">
-            <Link className="footer__link" href="#">
+            <Link className="footer__link" href="#" role="link">
               ibm.com
             </Link>
           </li>
         </ul>
         <ul className="bx--col-lg-4 bx--col-md-2 bx--col-sm-8 footer__list">
           <li className="footer__list-item">
-            <Link className="footer__link" href="#">
+            <Link className="footer__link" href="#" role="link">
               Update information
             </Link>
           </li>
           <li className="footer__list-item">
-            <Link className="footer__link" href="#">
+            <Link className="footer__link" href="#" role="link">
               Opt out
             </Link>
           </li>
@@ -39,7 +39,11 @@ const GlobalFooter = () => {
         <div className="bx--col-lg-3 bx--col-md-2 bx--col-sm-8 footer__content">
           <p className="footer__content-text">
             Have questions? Please{" "}
-            <Link className="footer__link footer__link--email" href="#">
+            <Link
+              className="footer__link footer__link--email"
+              href="#"
+              role="link"
+            >
               email us.
             </Link>
           </p>

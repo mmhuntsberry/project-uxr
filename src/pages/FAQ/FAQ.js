@@ -6,7 +6,7 @@ const FAQ = () => {
   return (
     <>
       <section className="bx--row section section--gradient banner--faq">
-        <div className="banner__text-container">
+        <div className="banner__text-container" role="group">
           <h4 className="banner__title">Frequently Asked Questions</h4>
           <p className="banner__text">
             Here are some common questions and answers about our exclusive
@@ -37,21 +37,29 @@ const FAQ = () => {
           How do I sign up for the program?
         </h1>
         <p className="section__body section__body--faq">
-          Easy! Just fill out this <Link href="#">sign-up form.</Link>
+          Easy! Just fill out this{" "}
+          <Link href="#" role="link">
+            sign-up form.
+          </Link>
         </p>
         <h1 className="section__title section__title--faq">
           I’m an existing panel member. Can I update my information?
         </h1>
         <p className="section__body section__body--faq">
-          Yes! Just re-submit the <Link href="#">sign-up form </Link>and we'll
-          update your information.
+          Yes! Just re-submit the{" "}
+          <Link href="#" role="link">
+            sign-up form{" "}
+          </Link>
+          and we'll update your information.
         </p>
         <h1 className="section__title section__title--faq">
           I’ve signed up, but I no longer want to participate. How do I opt out?
         </h1>
         <p className="section__body section__body--faq">
           We'll be sorry to see you go! Just fill out this{" "}
-          <Link href="#">opt-out form.</Link>
+          <Link href="#" role="link">
+            opt-out form.
+          </Link>
         </p>
       </section>
     </>

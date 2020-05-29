@@ -12,7 +12,7 @@ import max from "../../assets/images/image-background-hero-about-w_1920.jpg";
 const Hero = () => {
   return (
     <section className="bx--row hero">
-      <div className="bx--col-lg-16 hero__image-container">
+      <div className="bx--col-lg-16 hero__image-container" role="group">
         <picture>
           <source srcSet={max} media="(min-width: 1922px)" />
           <source srcSet={xlarge} media="(min-width: 1600px)" />
@@ -27,7 +27,7 @@ const Hero = () => {
         </picture>
       </div>
 
-      <div className="bx--col-lg-16 hero__text-container">
+      <div className="bx--col-lg-16 hero__text-container" role="group">
         <h4 className="hero__title">
           Let's shape the future of IBM products, together
         </h4>
@@ -36,7 +36,11 @@ const Hero = () => {
           what's not working. Join our user research studies and tell us what
           you think.
         </p>
-        <Button className="button button--hero" onClick={() => {}}>
+        <Button
+          className="button button--hero"
+          onClick={() => {}}
+          role="button"
+        >
           Sign up
         </Button>
       </div>

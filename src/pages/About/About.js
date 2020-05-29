@@ -13,13 +13,16 @@ const About = () => {
       <Hero />
       <section className="bx--row section sign-up">
         <h2 className="bx--col-lg-4 section__title">Why sign up?</h2>
-        <div className="bx--row sign-up__cards-container">
+        <div className="bx--row sign-up__cards-container" role="group">
           <Card />
         </div>
       </section>
 
       <section className="bx--row section section--gradient get-started">
-        <div className="bx--col-lg-4 bx--col-md-3 bx--col-sm-8 get-started__content">
+        <div
+          className="bx--col-lg-4 bx--col-md-3 bx--col-sm-8 get-started__content"
+          role="group"
+        >
           <h2 className="section__title">Let's get started!</h2>
           <p className="section__text">
             Sign up to be part of our user research studies.
@@ -28,7 +31,7 @@ const About = () => {
         </div>
 
         <div className="bx--col-lg-13=2 bx--col-md-5 bx--col-sm-8">
-          <div className="get-started__steps-container">
+          <div className="get-started__steps-container" row="group">
             <h2 className="section__title--how-it-works">
               Here's how it works:
             </h2>
@@ -48,7 +51,7 @@ const About = () => {
             Check out some answers to frequently asked questions about the
             program.
           </p>
-          <Link className="link link--learn-more" to="/faq">
+          <Link className="link link--learn-more" to="/faq" role="link">
             Read the FAQ &rarr;
           </Link>
         </div>
