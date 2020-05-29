@@ -29,7 +29,7 @@ const Hero = () => {
         <h4 className="hero__title">
           Let's shape the future of IBM products, together
         </h4>
-        <p className="hero__subtitle">
+        <p className="hero__text">
           We want to hear about your user experiences - what's working and
           what's not working. Join our user research studies and tell us what
           you think.

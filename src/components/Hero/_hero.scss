@@ -30,18 +30,19 @@
 .hero__text-container {
   position: absolute;
   width: 215px;
-  margin-top: $layout-06 + $spacing-02;
-  margin-left: $layout-01;
+  margin-top: $layout-06 + $spacing-02; // 100px
+  margin-left: $layout-01; // 16px
 
   @media (min-width: 400px) {
     width: 350px;
   }
 
   @media (min-width: 768px) {
-    margin-top: $layout-07 + $layout-05;
-    margin-left: $layout-05 + $layout-01;
+    margin-top: $layout-07 + $layout-05; // 224px
+    margin-left: $layout-05 + $layout-01; // 80px
   }
 
+  // TODO Come back to and refactor
   &--faq {
     @media (min-width: 768px) {
       margin-top: $spacing-08 * 3;
@@ -51,25 +52,34 @@
 }
 
 .hero__title {
-  @include carbon--type-style("productive-heading-05");
+  @include carbon--type-style("expressive-heading-05");
   color: $text-04;
 
   @media (min-width: 768px) {
     @include carbon--type-style("productive-heading-06");
   }
 
+  // TODO Come back to and refactor
   &--faq {
-    color: black;
+    // TODO give this a token
+    color: #000;
   }
 }
 
-.hero__subtitle {
-  @include carbon--type-style("body-short-01");
+.hero__text {
+  @include carbon--type-style("body-long-01");
   margin-top: $layout-01;
   color: $text-04;
 
+  @media (min-width: 768px) {
+    @include carbon--type-style("body-long-02");
+    font-weight: 600;
+  }
+
+  // TODO Come back to and refactor
   &--faq {
-    color: black;
+    // TODO give this a token
+    color: #000;
   }
 }
 
