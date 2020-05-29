@@ -37,12 +37,15 @@
     width: 300px;
   }
 
-  @media (min-width: 640px) {
+  @media (min-width: 768px) {
     width: 400px;
+    margin-top: $layout-07 + $layout-03; // 224px
+    margin-left: $layout-05 + $layout-01; // 80px
   }
 
-  @media (min-width: 768px) {
-    margin-top: $layout-07 + $layout-05; // 224px
+  @media (min-width: 900px) {
+    width: 600px;
+    margin-top: $layout-07 + $layout-03; // 224px
     margin-left: $layout-05 + $layout-01; // 80px
   }
 }
@@ -51,8 +54,10 @@
   @include carbon--type-style('expressive-heading-05');
   color: $text-04;
 
-  @media (min-width: 768px) {
+  @media (min-width: 900px) {
     @include carbon--type-style('productive-heading-06');
+    font-size: 65px;
+    line-height: 1.2;
   }
 }
 
