@@ -6,8 +6,8 @@ const GlobalFooter = () => {
   return (
     <footer className="bx--row section footer">
       <div className="bx--row footer__list-container">
-        <div className="bx--col-md-4 bx--offset-lg-2 bx--col-lg-1">8/16</div>
-        <ul className="bx--col-lg-2 bx--col-md-8 bx--col-sm-8 footer__list">
+        <div className="bx--col-md-1 bx--offset-lg-1 bx--col-lg-1"></div>
+        <ul className="bx--col-lg-2 bx--col-md-2 bx--col-sm-8 footer__list">
           <li className="footer__list-item">
             <Link className="footer__link" href="#">
               Privacy
@@ -24,7 +24,7 @@ const GlobalFooter = () => {
             </Link>
           </li>
         </ul>
-        <ul className="bx--col-lg-4 bx--col-md-8 bx--col-sm-8 footer__list">
+        <ul className="bx--col-lg-4 bx--col-md-2 bx--col-sm-8 footer__list">
           <li className="footer__list-item">
             <Link className="footer__link" href="#">
               Update information
@@ -36,7 +36,7 @@ const GlobalFooter = () => {
             </Link>
           </li>
         </ul>
-        <div className="bx--col-lg-3 bx--col-md-8 bx--col-sm-8 footer__content">
+        <div className="bx--col-lg-3 bx--col-md-2 bx--col-sm-8 footer__content">
           <p className="footer__content-text">
             Have questions? Please{" "}
             <Link className="footer__link footer__link--email" href="#">
