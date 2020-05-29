@@ -2,12 +2,12 @@ import React from "react";
 import { Button } from "carbon-components-react";
 
 // hero images
-import small from "../../assets/images/image-background-hero-w_320.jpg";
-import medium from "../../assets/images/image-background-hero-w_768.jpg";
-import large from "../../assets/images/image-background-hero-w_1024.jpg";
-import medlarge from "../../assets/images/image-background-hero-w_1366.jpg";
-import xlarge from "../../assets/images/image-background-hero-w_1600.jpg";
-import max from "../../assets/images/image-background-hero-w_1920.jpg";
+import small from "../../assets/images/image-background-hero-about-w_320.jpg";
+import medium from "../../assets/images/image-background-hero-about-w_768.jpg";
+import large from "../../assets/images/image-background-hero-about-w_1024.jpg";
+import medlarge from "../../assets/images/image-background-hero-about-w_1366.jpg";
+import xlarge from "../../assets/images/image-background-hero-about-w_1600.jpg";
+import max from "../../assets/images/image-background-hero-about-w_1920.jpg";
 
 const Hero = () => {
   return (

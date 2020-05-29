@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "carbon-components-react";
-import logo from "../../assets/svg/logo-ibm.svg";
+import logo from "../../assets/svg/svg-footer-logo-ibm.svg";
 
 const GlobalFooter = () => {
   return (

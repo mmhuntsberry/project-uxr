@@ -54,12 +54,6 @@
   @media (min-width: 768px) {
     @include carbon--type-style("productive-heading-06");
   }
-
-  // TODO Come back to and refactor
-  &--faq {
-    // TODO give this a token
-    color: #000;
-  }
 }
 
 .hero__text {
@@ -70,12 +64,6 @@
   @media (min-width: 768px) {
     @include carbon--type-style("body-long-02");
     font-weight: 600;
-  }
-
-  // TODO Come back to and refactor
-  &--faq {
-    // TODO give this a token
-    color: #000;
   }
 }
 

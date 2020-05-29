@@ -1,7 +1,7 @@
-import impact from "../../../assets/svg/impact.svg";
-import coCreation from "../../../assets/svg/co-creation.svg";
-import exclusiveContent from "../../../assets/svg/exclusive-content.svg";
-import compensation from "../../../assets/svg/compensation.svg";
+import impact from "../../../assets/svg/svg-card-signup-about-impact.svg";
+import coCreation from "../../../assets/svg/svg-card-signup-about-co-creation.svg";
+import exclusiveContent from "../../../assets/svg/svg-card-signup-about-exclusive-content.svg";
+import compensation from "../../../assets/svg/svg-card-signup-about-compensation.svg";
 
 export const signupSectionData = [
   {
