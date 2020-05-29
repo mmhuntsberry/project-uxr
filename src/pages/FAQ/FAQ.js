@@ -5,12 +5,10 @@ import { Link } from "carbon-components-react";
 const FAQ = () => {
   return (
     <>
-      <section className="bx--row section section--gradient hero--faq">
-        <div className="hero__text-container hero__text-container--faq">
-          <h4 className="hero__title hero__title--faq">
-            Frequently Asked Questions
-          </h4>
-          <p className="hero__subtitle hero__subtitle--faq">
+      <section className="bx--row section section--gradient banner--faq">
+        <div className="banner__text-container">
+          <h4 className="banner__title">Frequently Asked Questions</h4>
+          <p className="banner__text">
             Here are some common questions and answers about our exclusive
             research programs.
           </p>
@@ -34,6 +32,7 @@ const FAQ = () => {
         {/* 
           All of the Questions with links embedded are rendered below. You can not render JSX with links in an object.  Because of Type Coercion a JSX Component will be coerced to a string.  This will need to be refactored if a link is added to any of the above FAQs.
         */}
+
         <h1 className="section__title section__title--faq">
           How do I sign up for the program?
         </h1>

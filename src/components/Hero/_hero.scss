@@ -41,14 +41,6 @@
     margin-top: $layout-07 + $layout-05; // 224px
     margin-left: $layout-05 + $layout-01; // 80px
   }
-
-  // TODO Come back to and refactor
-  &--faq {
-    @media (min-width: 768px) {
-      margin-top: $spacing-08 * 3;
-      max-width: 500px;
-    }
-  }
 }
 
 .hero__title {
