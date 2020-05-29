@@ -12,17 +12,17 @@
 }
 
 .sign-up__card-title {
-  @include carbon--type-style("productive-heading-02");
+  @include carbon--type-style('productive-heading-02');
   margin-top: $spacing-05;
 }
 
 .sign-up__card-body {
-  @include carbon--type-style("body-long-01");
+  @include carbon--type-style('body-long-01');
   margin-top: $spacing-02;
 }
 
 .sign-up__card-note {
-  @include carbon--type-style("helper-text-01");
+  @include carbon--type-style('helper-text-01');
   display: inline-block;
   margin-top: $spacing-03;
 }
