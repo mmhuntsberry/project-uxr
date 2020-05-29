@@ -5,14 +5,14 @@
 
 // needed to override default carbon bg hover styles
 a.bx--side-nav__link--current {
-  background-color: #393939;
+  background-color: $interactive-02;
 }
 
 // needed to override default text color in side nav
 .bx--side-nav__item:not(.bx--side-nav__item--active)
   > .bx--side-nav__link
   > span {
-  color: #fff;
+  color: $text-04;
 }
 
 // needed to overwrite default carbon hover styles
@@ -23,7 +23,7 @@ a.bx--side-nav__link--current {
   .bx--side-nav__menu-item
   > .bx--side-nav__link:hover
   > span {
-  color: white;
+  color: $text-04;
 }
 
 // needed to override default carbon hover styles
@@ -36,5 +36,5 @@ a.bx--side-nav__link--current {
   a.bx--side-nav__link:not(.bx--side-nav__link--current):not([aria-current='page']):hover,
 .bx--side-nav a.bx--header__menu-item:hover,
 .bx--side-nav .bx--header__menu-title[aria-expanded='true']:hover {
-  background-color: #393939;
+  background-color: $interactive-02;
 }
