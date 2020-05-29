@@ -1,15 +1,40 @@
+// needed to override carbon bg styles
 .bx--side-nav__navigation {
   background-color: $ui-05;
 }
 
-.bx--text-truncate--end {
-  color: #fff;
-}
-
-.bx--side-nav a.bx--header__menu-item[role="menuitem"]:hover {
+// needed to override default carbon bg hover styles
+a.bx--side-nav__link--current {
   background-color: #393939;
 }
 
-// .active::after {
-//   border-bottom: 4px solid blue;
-// }
+// needed to override default text color in side nav
+.bx--side-nav__item:not(.bx--side-nav__item--active)
+  > .bx--side-nav__link
+  > span {
+  color: #fff;
+}
+
+// needed to overwrite default carbon hover styles
+.bx--side-nav__item:not(.bx--side-nav__item--active)
+  > .bx--side-nav__link:hover
+  > span,
+.bx--side-nav__item:not(.bx--side-nav__item--active)
+  .bx--side-nav__menu-item
+  > .bx--side-nav__link:hover
+  > span {
+  color: white;
+}
+
+// needed to override default carbon hover styles
+.bx--side-nav__item:not(.bx--side-nav__item--active):hover
+  .bx--side-nav__item:not(.bx--side-nav__item--active)
+  > .bx--side-nav__submenu:hover,
+.bx--side-nav__item:not(.bx--side-nav__item--active)
+  > .bx--side-nav__link:hover,
+.bx--side-nav__menu
+  a.bx--side-nav__link:not(.bx--side-nav__link--current):not([aria-current="page"]):hover,
+.bx--side-nav a.bx--header__menu-item:hover,
+.bx--side-nav .bx--header__menu-title[aria-expanded="true"]:hover {
+  background-color: #393939;
+}

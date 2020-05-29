@@ -12,8 +12,7 @@ import {
   SideNav,
   SideNavLink,
   SideNavItems,
-  SkipToContent,
-  Button
+  SkipToContent
 } from "carbon-components-react/lib/components/UIShell";
 
 const GlobalHeader = () => {
