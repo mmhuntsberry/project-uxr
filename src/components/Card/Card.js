@@ -1,5 +1,5 @@
 import React from "react";
-import { signupSectionData } from "../../data/data.js";
+import { signupSectionData } from "../../pages/About/data/about.js";
 
 const Card = () => {
   return (
