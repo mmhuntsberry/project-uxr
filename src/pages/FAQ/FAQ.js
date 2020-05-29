@@ -1,5 +1,5 @@
 import React from "react";
-import { frequentlyAskedQuestions } from "../../data/data";
+import { faq } from "./data/faq.js";
 import { Link } from "carbon-components-react";
 
 const FAQ = () => {
@@ -17,7 +17,7 @@ const FAQ = () => {
         </div>
       </section>
       <section className="section--faq">
-        {frequentlyAskedQuestions.map(q => (
+        {faq.map(q => (
           <>
             <h1 className="section__title section__title--faq">{q.title}</h1>
             <p className="section__body section__body--faq">{q.body}</p>
@@ -31,7 +31,9 @@ const FAQ = () => {
           </>
         ))}
 
-        {/* These are the FAQs with links couldn't figure out how to include link when mapping from an object */}
+        {/* 
+          All of the Questions with links embedded are rendered below. You can not render JSX with links in an object.  Because of Type Coercion a JSX Component will be coerced to a string.  This will need to be refactored if a link is added to any of the above FAQs.
+        */}
         <h1 className="section__title section__title--faq">
           How do I sign up for the program?
         </h1>

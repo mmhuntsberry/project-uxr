@@ -4,10 +4,6 @@
 @import "carbon-components/scss/globals/scss/typography";
 @import "carbon-components/scss/globals/scss/vars";
 
-// Vendor Imports
-@import "../../styles/vendors/normalize";
-@import "../../styles/base/base";
-
 @import "../GlobalHeader/global-header";
 @import "../GlobalFooter/global-footer";
 @import "../../pages/About/about";
@@ -15,7 +11,7 @@
 @import "../Hero/hero";
 @import "../Card/card";
 
-.app {
-  margin: 0;
+// override default padding from carbon grid
+.uxr-app {
   padding: 0;
 }
