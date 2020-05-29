@@ -1,22 +1,24 @@
 import React from "react";
 import { Button } from "carbon-components-react";
-import small from "../../assets/images/image-background-hero-w_300.jpeg";
-import medium from "../../assets/images/image-background-hero-w_400.jpeg";
-import large from "../../assets/images/image-background-hero-w_600.jpeg";
-import medlarge from "../../assets/images/image-background-hero-w_800.jpeg";
-import xlarge from "../../assets/images/image-background-hero-w_1200.jpeg";
-import max from "../../assets/images/image-background-hero-w_1500.jpeg";
+
+// hero images
+import small from "../../assets/uxr-images/image-background-hero-w_320.jpg";
+import medium from "../../assets/uxr-images/image-background-hero-w_768.jpg";
+import large from "../../assets/uxr-images/image-background-hero-w_1024.jpg";
+import medlarge from "../../assets/uxr-images/image-background-hero-w_1366.jpg";
+import xlarge from "../../assets/uxr-images/image-background-hero-w_1600.jpg";
+import max from "../../assets/uxr-images/image-background-hero-w_1920.jpg";
 
 const Hero = () => {
   return (
     <section className="bx--row hero">
       <div className="bx--col-lg-16 hero__image-container">
         <picture>
-          <source srcSet={max} media="(min-width: 1500px)" />
-          <source srcSet={xlarge} media="(min-width: 1200px)" />
-          <source srcSet={medlarge} media="(min-width: 800px)" />
-          <source srcSet={large} media="(min-width: 600px)" />
-          <source srcSet={medium} media="(min-width: 400px)" />
+          <source srcSet={max} media="(min-width: 1922px)" />
+          <source srcSet={xlarge} media="(min-width: 1600px)" />
+          <source srcSet={medlarge} media="(min-width: 1024px)" />
+          <source srcSet={large} media="(min-width: 768px)" />
+          <source srcSet={medium} media="(min-width: 480px)" />
           <img
             src={small}
             alt="A man conducting research"
