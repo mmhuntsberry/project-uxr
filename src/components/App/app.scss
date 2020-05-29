@@ -4,6 +4,8 @@
 @import "carbon-components/scss/globals/scss/typography";
 @import "carbon-components/scss/globals/scss/vars";
 
+@import "./overrides";
+
 @import "../GlobalHeader/global-header";
 @import "../GlobalFooter/global-footer";
 @import "../../pages/About/about";

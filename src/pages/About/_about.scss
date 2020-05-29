@@ -1,25 +1,29 @@
-@import "./overrides";
-
 .sign-up {
   @media (min-width: 768px) {
-    padding-left: $layout-05 + $spacing-03;
+    padding-left: $layout-05 + $spacing-03; // 72px + 8px which is default from carbon
+  }
+}
+
+.get-started {
+  @media (min-width: 768px) {
+    padding: $layout-05 + $layout-01 $layout-05 + $spacing-03;
   }
 }
 
 .section {
-  margin: 0;
+  margin: 0; // removes the default margin from carbon grids bx--col
 }
 
 .section__title {
   @include carbon--type-style("productive-heading-05");
   margin-top: $spacing-08;
-
-  &--how-it-works {
-    font-weight: 100;
-  }
 }
 
-.section__subtitle {
+.section__title--how-it-works {
+  font-weight: 100;
+}
+
+.section__text {
   @include carbon--type-style("body-short-01");
   margin-top: $spacing-05;
 }
@@ -33,26 +37,15 @@
   );
 }
 
-.get-started {
-  @media (min-width: 768px) {
-    padding: $layout-05 + $layout-01 $layout-05 + $spacing-03;
-    padding-right: 0;
-  }
-}
-
-.sign-up__button {
+.button--sign-up {
   margin-top: $spacing-07;
 }
 
 .get-started__steps-container {
   margin-top: $spacing-08;
   margin-bottom: $spacing-08;
-  padding-left: 16px;
+  padding-left: $spacing-05;
   border-left: 1px solid #00000060;
-
-  @media (min-width: 768px) {
-    width: 100%;
-  }
 }
 
 .step__title {
@@ -66,7 +59,7 @@
   margin-top: $spacing-05;
 }
 
-.link--read-more {
+.link--learn-more {
   display: inline-block;
   margin-top: $spacing-03;
   margin-bottom: $spacing-09;
