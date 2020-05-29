@@ -15,7 +15,7 @@
 }
 
 .section__title {
-  @include carbon--type-style("productive-heading-05");
+  @include carbon--type-style('productive-heading-05');
   margin-top: $spacing-08;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .section__text {
-  @include carbon--type-style("body-short-01");
+  @include carbon--type-style('body-short-01');
   margin-top: $spacing-05;
 }
 
@@ -49,13 +49,13 @@
 }
 
 .step__title {
-  @include carbon--type-style("productive-heading-04");
+  @include carbon--type-style('productive-heading-04');
   margin-top: $spacing-07;
   font-weight: 100;
 }
 
 .step__body {
-  @include carbon--type-style("body-short-01");
+  @include carbon--type-style('body-short-01');
   margin-top: $spacing-05;
 }
 

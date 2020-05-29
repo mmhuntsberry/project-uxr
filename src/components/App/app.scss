@@ -1,17 +1,17 @@
 // Carbon Style Imports
-@import "carbon-components/scss/globals/scss/vendor/@carbon/type/scss/font-family";
-@import "carbon-components/scss/globals/scss/vendor/@carbon/layout/scss/breakpoint";
-@import "carbon-components/scss/globals/scss/typography";
-@import "carbon-components/scss/globals/scss/vars";
+@import 'carbon-components/scss/globals/scss/vendor/@carbon/type/scss/font-family';
+@import 'carbon-components/scss/globals/scss/vendor/@carbon/layout/scss/breakpoint';
+@import 'carbon-components/scss/globals/scss/typography';
+@import 'carbon-components/scss/globals/scss/vars';
 
-@import "./overrides";
+@import './overrides';
 
-@import "../GlobalHeader/global-header";
-@import "../GlobalFooter/global-footer";
-@import "../../pages/About/about";
-@import "../../pages/FAQ/faq";
-@import "../Hero/hero";
-@import "../Card/card";
+@import '../GlobalHeader/global-header';
+@import '../GlobalFooter/global-footer';
+@import '../../pages/About/about';
+@import '../../pages/FAQ/faq';
+@import '../Hero/hero';
+@import '../Card/card';
 
 // override default padding from carbon grid
 .uxr-app {

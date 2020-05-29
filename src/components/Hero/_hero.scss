@@ -48,21 +48,21 @@
 }
 
 .hero__title {
-  @include carbon--type-style("expressive-heading-05");
+  @include carbon--type-style('expressive-heading-05');
   color: $text-04;
 
   @media (min-width: 768px) {
-    @include carbon--type-style("productive-heading-06");
+    @include carbon--type-style('productive-heading-06');
   }
 }
 
 .hero__text {
-  @include carbon--type-style("body-long-01");
+  @include carbon--type-style('body-long-01');
   margin-top: $layout-01;
   color: $text-04;
 
   @media (min-width: 768px) {
-    @include carbon--type-style("body-long-02");
+    @include carbon--type-style('body-long-02');
     font-weight: 600;
   }
 }

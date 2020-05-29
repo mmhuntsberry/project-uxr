@@ -12,7 +12,7 @@
 }
 
 .footer__list {
-  @include carbon--type-style("body-short-01");
+  @include carbon--type-style('body-short-01');
 
   position: relative;
   margin-top: 24px;
@@ -20,7 +20,7 @@
 
   &::after {
     @media (max-width: 672px) {
-      content: "";
+      content: '';
       display: block;
       position: absolute;
       bottom: 0;
@@ -40,7 +40,7 @@
 }
 
 .footer__content-text {
-  @include carbon--type-style("body-short-01");
+  @include carbon--type-style('body-short-01');
 
   &:nth-child(2) {
     margin-top: 16px;
