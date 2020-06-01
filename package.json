@@ -16,6 +16,7 @@
     "node-sass": "^4.13.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-helmet": "^6.0.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.1"
   },
@@ -55,6 +56,7 @@
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-react-hooks": "^2.3.0",
     "prettier": "^1.19.1",
+    "react-snap": "^1.23.0",
     "stylelint": "^12.0.1",
     "stylelint-config-property-sort-order-smacss": "^5.2.0",
     "stylelint-config-sass-guidelines": "^6.2.0"

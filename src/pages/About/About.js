@@ -3,6 +3,7 @@ import { Button } from "carbon-components-react";
 import { Link } from "react-router-dom";
 import Hero from "../../components/Hero";
 import Card from "../../components/Card";
+import { Helmet } from "react-helmet";
 import { motion } from "framer-motion";
 
 // about page data
@@ -11,10 +12,18 @@ import { signupSteps } from "./data/about.js";
 const About = () => {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 100 }}
+      initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -100 }}
+      exit={{ opacity: 0, y: -50 }}
     >
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>About | IBM User Experience Research</title>
+        <meta
+          name="description"
+          content="Enter a description for the about page."
+        />
+      </Helmet>
       <Hero />
       <section className="bx--row section sign-up">
         <h2 className="bx--col-lg-4 section__title">Why sign up?</h2>
