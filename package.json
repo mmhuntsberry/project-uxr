@@ -14,6 +14,7 @@
     "carbon-icons": "^7.0.7",
     "framer-motion": "^1.11.0",
     "node-sass": "^4.13.0",
+    "prerender-spa-plugin": "^3.4.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.0.0",
@@ -23,6 +24,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build:rewired": "react-app-rewired build",
     "deploy": "rm -rf ./build && yarn build && cf push -f manifest.yml",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -56,6 +58,7 @@
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-react-hooks": "^2.3.0",
     "prettier": "^1.19.1",
+    "react-app-rewired": "^2.1.6",
     "stylelint": "^12.0.1",
     "stylelint-config-property-sort-order-smacss": "^5.2.0",
     "stylelint-config-sass-guidelines": "^6.2.0"
