@@ -1,24 +1,22 @@
 import React from "react";
 import { faq } from "./data/faq.js";
 import { Link } from "carbon-components-react";
-import { Helmet } from "react-helmet";
+import { useMetadata } from "use-metadata";
 import { motion } from "framer-motion";
 
 const FAQ = () => {
+  const title = "FAQ | IBM User Experience Research";
+  const description = "This is an faq description";
+
+  // set meta data for the prerendered routes
+  useMetadata({ title, description });
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -50 }}
     >
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>FAQ | IBM User Experience Research</title>
-        <meta
-          name="description"
-          content="Enter a description for the faq page."
-        />
-      </Helmet>
       <section className="bx--row section section--gradient banner--faq">
         <div className="banner__text-container" role="group">
           <h1 className="banner__title">Frequently Asked Questions</h1>
