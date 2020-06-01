@@ -11,11 +11,11 @@ before_install:
 
 script:
   # - yarn test
-  - yarn build
+  - yarn build:rewired
 
 deploy:
   - provider: script
     script: bash scripts/deploy-script.sh
     skip_cleanup: true
     on:
-      branch: master
+      branch: prerender
