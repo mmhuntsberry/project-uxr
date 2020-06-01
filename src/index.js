@@ -6,9 +6,20 @@ import "./index.scss";
 
 import App from "./components/App";
 
-ReactDOM.render(
-  <Router>
-    <App />
-  </Router>,
-  document.getElementById("root")
-);
+const rootElement = document.getElementById("root");
+
+if (rootElement.hasChildNodes()) {
+  ReactDOM.hydrate(
+    <Router>
+      <App />
+    </Router>
+  ),
+    rootElement;
+} else {
+  ReactDOM.render(
+    <Router>
+      <App />
+    </Router>,
+    rootElement
+  );
+}
