@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Link as CarbonLink } from "carbon-components-react";
+import { Link as CarbonLink } from "carbon-components-react";
 import { Link } from "react-router-dom";
 import Hero from "../../components/Hero";
 import Card from "../../components/Card";
