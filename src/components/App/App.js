@@ -6,22 +6,25 @@ import GlobalFooter from "../../components/GlobalFooter";
 import About from "../../pages/About/About";
 import FAQ from "../../pages/FAQ/FAQ";
 import ScrollToTop from "../ScrollToTop/ScrollToTop";
+import { motion, AnimatePresence } from "framer-motion";
 
 import "./app.scss";
 
 function App() {
   return (
-    <div className="bx--grid bx--grid--full-width uxr-app">
+    <motion.div className="bx--grid bx--grid--full-width uxr-app">
       <GlobalHeader />
       <Content>
         <ScrollToTop />
-        <Switch>
-          <Route exact path="/" component={About} />
-          <Route path="/faq" component={FAQ} />
-        </Switch>
+        <AnimatePresence>
+          <Switch>
+            <Route exact path="/" component={About} />
+            <Route path="/faq" component={FAQ} />
+          </Switch>
+        </AnimatePresence>
       </Content>
       <GlobalFooter />
-    </div>
+    </motion.div>
   );
 }
 

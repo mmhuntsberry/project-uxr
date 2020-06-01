@@ -1,10 +1,15 @@
 import React from "react";
 import { faq } from "./data/faq.js";
 import { Link } from "carbon-components-react";
+import { motion } from "framer-motion";
 
 const FAQ = () => {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -100 }}
+    >
       <section className="bx--row section section--gradient banner--faq">
         <div className="banner__text-container" role="group">
           <h1 className="banner__title">Frequently Asked Questions</h1>
@@ -62,7 +67,7 @@ const FAQ = () => {
           </Link>
         </p>
       </section>
-    </>
+    </motion.div>
   );
 };
 
