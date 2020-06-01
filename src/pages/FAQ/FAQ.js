@@ -7,7 +7,7 @@ const FAQ = () => {
     <>
       <section className="bx--row section section--gradient banner--faq">
         <div className="banner__text-container" role="group">
-          <h4 className="banner__title">Frequently Asked Questions</h4>
+          <h1 className="banner__title">Frequently Asked Questions</h1>
           <p className="banner__text">
             Here are some common questions and answers about our exclusive
             research programs.

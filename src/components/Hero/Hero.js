@@ -28,9 +28,9 @@ const Hero = () => {
       </div>
 
       <div className="bx--col-lg-16 hero__text-container" role="group">
-        <h4 className="hero__title">
+        <h1 className="hero__title">
           Let's shape the future of IBM products, together
-        </h4>
+        </h1>
         <p className="hero__text">
           We want to hear about your user experiences - what's working and
           what's not working. Join our user research studies and tell us what
