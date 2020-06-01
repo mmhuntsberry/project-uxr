@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "carbon-components-react";
+import { Button, Link as CarbonLink } from "carbon-components-react";
 import { Link } from "react-router-dom";
 import Hero from "../../components/Hero";
 import Card from "../../components/Card";
@@ -39,7 +39,12 @@ const About = () => {
           <p className="section__text">
             Sign up to be part of our user research studies.
           </p>
-          <Button className="button button--sign-up">Sign up</Button>
+          <CarbonLink
+            className="bx--btn bx--btn--primary button button--sign-up"
+            href="https://www.surveymonkey.com/r/6DRQ27H"
+          >
+            Sign up
+          </CarbonLink>
         </div>
 
         <div className="bx--col-lg-13=2 bx--col-md-5 bx--col-sm-8">

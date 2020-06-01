@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "carbon-components-react";
+import { Link } from "carbon-components-react";
 
 // hero images
 import small from "../../assets/images/image-background-hero-about-w_320.jpg";
@@ -36,13 +36,13 @@ const Hero = () => {
           what's not working. Join our user research studies and tell us what
           you think.
         </p>
-        <Button
-          className="button button--hero"
-          onClick={() => {}}
-          role="button"
+        <Link
+          className="button button--hero bx--btn bx--btn--primary"
+          href="https://www.surveymonkey.com/r/6DRQ27H"
+          role="link"
         >
           Sign up
-        </Button>
+        </Link>
       </div>
     </section>
   );

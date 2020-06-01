@@ -50,7 +50,7 @@ const FAQ = () => {
         </h1>
         <p className="section__body section__body--faq">
           Easy! Just fill out this{" "}
-          <Link href="#" role="link">
+          <Link href="https://www.surveymonkey.com/r/6DRQ27H" role="link">
             sign-up form.
           </Link>
         </p>
@@ -59,7 +59,7 @@ const FAQ = () => {
         </h1>
         <p className="section__body section__body--faq">
           Yes! Just re-submit the{" "}
-          <Link href="#" role="link">
+          <Link href="https://www.surveymonkey.com/r/6DRQ27H" role="link">
             sign-up form{" "}
           </Link>
           and we'll update your information.
