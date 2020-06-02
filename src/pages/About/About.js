@@ -42,6 +42,7 @@ const About = () => {
           <CarbonLink
             className="bx--btn bx--btn--primary button button--sign-up"
             href="https://www.surveymonkey.com/r/6DRQ27H"
+            target="_blank"
           >
             Sign up
           </CarbonLink>

@@ -39,6 +39,7 @@ const Hero = () => {
         <Link
           className="button button--hero bx--btn bx--btn--primary"
           href="https://www.surveymonkey.com/r/6DRQ27H"
+          target="_blank"
           role="link"
         >
           Sign up
