@@ -24,6 +24,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "start:rewired": "react-app-rewired start",
     "build": "react-scripts build",
     "build:rewired": "react-app-rewired build",
     "deploy": "rm -rf ./build && yarn build && cf push -f manifest.yml",
