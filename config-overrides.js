@@ -6,13 +6,9 @@ module.exports = (config, env) => {
   if (env === "production") {
     config.plugins = config.plugins.concat([
       new PrerenderSPAPlugin({
-        routes: ["/index.html", "/faq/index.html"],
-        staticDir: path.join(__dirname, "build"),
-        // Workaround for async
-        renderer: new Renderer({
-          renderAfterDocumentEvent: "render-event"
-        }),
-        headless: true
+        indexPath: path.join(__dirname, "build", "index.html"),
+        routes: ["/", "/faq"],
+        staticDir: path.join(__dirname, "build")
       })
     ]);
   }
