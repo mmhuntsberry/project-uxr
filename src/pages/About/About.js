@@ -69,7 +69,7 @@ const About = () => {
             Check out some answers to frequently asked questions about the
             program.
           </p>
-          <Link className="link link--learn-more" to="/faq" role="link">
+          <Link className="link link--learn-more" to="/faq/" role="link">
             Read the FAQ &rarr;
           </Link>
         </div>
