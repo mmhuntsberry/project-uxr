@@ -1,29 +1,27 @@
 import React from "react";
-import { Button } from "carbon-components-react";
+import { Link as CarbonLink } from "carbon-components-react";
 import { Link } from "react-router-dom";
 import Hero from "../../components/Hero";
 import Card from "../../components/Card";
-import { Helmet } from "react-helmet";
+import { useMetadata } from "use-metadata";
 import { motion } from "framer-motion";
 
 // about page data
 import { signupSteps } from "./data/about.js";
 
 const About = () => {
+  const title = "About | IBM Experience Research";
+  const description = "This is an about description";
+
+  // set meta data for the prerendered routes
+  useMetadata({ title, description });
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -50 }}
     >
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>About | IBM User Experience Research</title>
-        <meta
-          name="description"
-          content="Enter a description for the about page."
-        />
-      </Helmet>
       <Hero />
       <section className="bx--row section sign-up">
         <h2 className="bx--col-lg-4 section__title">Why sign up?</h2>
@@ -41,7 +39,13 @@ const About = () => {
           <p className="section__text">
             Sign up to be part of our user research studies.
           </p>
-          <Button className="button button--sign-up">Sign up</Button>
+          <CarbonLink
+            className="bx--btn bx--btn--primary button button--sign-up"
+            href="https://www.surveymonkey.com/r/6DRQ27H"
+            target="_blank"
+          >
+            Sign up
+          </CarbonLink>
         </div>
 
         <div className="bx--col-lg-13=2 bx--col-md-5 bx--col-sm-8">
@@ -65,7 +69,7 @@ const About = () => {
             Check out some answers to frequently asked questions about the
             program.
           </p>
-          <Link className="link link--learn-more" to="/faq" role="link">
+          <Link className="link link--learn-more" to="/faq/" role="link">
             Read the FAQ &rarr;
           </Link>
         </div>

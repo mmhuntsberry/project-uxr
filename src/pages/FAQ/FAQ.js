@@ -1,24 +1,22 @@
 import React from "react";
 import { faq } from "./data/faq.js";
 import { Link } from "carbon-components-react";
-import { Helmet } from "react-helmet";
+import { useMetadata } from "use-metadata";
 import { motion } from "framer-motion";
 
 const FAQ = () => {
+  const title = "FAQ | IBM User Experience Research";
+  const description = "This is an faq description";
+
+  // set meta data for the prerendered routes
+  useMetadata({ title, description });
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -50 }}
     >
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>FAQ | IBM User Experience Research</title>
-        <meta
-          name="description"
-          content="Enter a description for the faq page."
-        />
-      </Helmet>
       <section className="bx--row section section--gradient banner--faq">
         <div className="banner__text-container" role="group">
           <h1 className="banner__title">Frequently Asked Questions</h1>
@@ -52,7 +50,11 @@ const FAQ = () => {
         </h1>
         <p className="section__body section__body--faq">
           Easy! Just fill out this{" "}
-          <Link href="#" role="link">
+          <Link
+            href="https://www.surveymonkey.com/r/6DRQ27H"
+            target="_blank"
+            role="link"
+          >
             sign-up form.
           </Link>
         </p>
@@ -61,7 +63,11 @@ const FAQ = () => {
         </h1>
         <p className="section__body section__body--faq">
           Yes! Just re-submit the{" "}
-          <Link href="#" role="link">
+          <Link
+            href="https://www.surveymonkey.com/r/6DRQ27H"
+            target="_blank"
+            role="link"
+          >
             sign-up form{" "}
           </Link>
           and we'll update your information.

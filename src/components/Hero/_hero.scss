@@ -79,6 +79,16 @@
   }
 }
 
+// override styles for link
+// to look like a button
+.button:visited,
+.button:visited:hover,
+.button:link,
+.button:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
 .button--hero {
   margin-top: $layout-02;
 }
