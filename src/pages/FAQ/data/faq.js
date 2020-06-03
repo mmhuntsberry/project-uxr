@@ -1,7 +1,7 @@
 // This is all of the FAQ's that don't have links in them.
 export const faq = [
   {
-    title: "How long is a typical study",
+    title: "How long is a typical study?",
     body:
       "Each session varies in duration, but they generally last between 30-90 minutes, depending on the type of research study you sign up for."
   },

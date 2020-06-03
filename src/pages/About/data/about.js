@@ -39,7 +39,7 @@ export const signupSectionData = [
 export const signupSteps = [
   {
     title: "01 Sign up",
-    body: "Fill out a quick survey so we can kow a bit more about you."
+    body: "Fill out a quick survey so we can know a bit more about you."
   },
   {
     title: "02 Participate",
