@@ -11,5 +11,5 @@ git clone https://github.com/mmhuntsberry/project-uxr.git
 ```
 
 ```
-yarn install && yarn start
+yarn install && yarn dev
 ```
