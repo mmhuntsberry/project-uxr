@@ -1,0 +1,78 @@
+// have to load import separately for static export
+@import 'carbon-components/scss/globals/scss/vars';
+@import 'carbon-components/scss/globals/scss/vendor/@carbon/type/scss/font-family';
+@import 'carbon-components/scss/globals/scss/vendor/@carbon/layout/scss/breakpoint';
+@import 'carbon-components/scss/globals/scss/typography';
+
+.banner--faq {
+  height: 360px;
+  @media (min-width: 768px) {
+    height: 427px;
+  }
+}
+
+.banner__text-container {
+  position: absolute;
+  width: 215px;
+  margin-top: $layout-06 + $spacing-02; // 100px
+  margin-left: $layout-01; // 16px
+
+  @media (min-width: 400px) {
+    width: 350px;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 500px;
+    margin-top: $spacing-08 * 3;
+    margin-left: $layout-05 + $layout-01;
+  }
+}
+
+.banner__title {
+  @include carbon--type-style('expressive-heading-05');
+  font-weight: 100; // expressive heading not honoring font-weight
+
+  @media (min-width: 768px) {
+    @include carbon--type-style('productive-heading-06');
+  }
+}
+
+.banner__text {
+  @include carbon--type-style('body-long-01');
+  margin-top: $layout-02;
+
+  @media (min-width: 768px) {
+    @include carbon--type-style('body-long-02');
+  }
+}
+
+.section--faq {
+  margin-right: $spacing-05;
+  margin-bottom: $spacing-08 + $spacing-08; // 80px
+  margin-left: $spacing-05;
+  @media (min-width: 768px) {
+    margin-left: $layout-05 + $layout-01;
+  }
+}
+
+.section__title--faq {
+  @include carbon--type-style('productive-heading-04');
+  margin-bottom: $spacing-05;
+  font-weight: 100;
+}
+
+.section__body--faq {
+  @include carbon--type-style('body-short-01');
+  margin-bottom: $spacing-08;
+}
+
+.subitem__title {
+  @include carbon--type-style('body-long-01');
+  margin-top: $spacing-06;
+  font-weight: 700;
+}
+
+.subitem__body {
+  @include carbon--type-style('body-long-01');
+  max-width: 752px;
+}
