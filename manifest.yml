@@ -1,5 +1,5 @@
 ---
 applications:
-  - name: project-uxr-next
+  - name: project-uxr
     memory: 128M
     buildpack: https://github.com/cloudfoundry/staticfile-buildpack
